@@ -4,7 +4,7 @@
 
     npm install
     
-    npm build 
+    npm run-script build
     
     拷贝.env到dist目录  cp ./src/.env ./dist
     node dist/index.js
