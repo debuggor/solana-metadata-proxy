@@ -1,20 +1,31 @@
 {
-  "name": "solana-metadata-proxy",
+  "name": "js-parse-proxy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/debuggor/solana-metadata-proxy.git"
+    "build": "run-s clean build:main",
+    "build:main": "tsc -p tsconfig.json",
+    "clean": "rimraf dist tsconfig.tsbuildinfo"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/debuggor/solana-metadata-proxy/issues"
+  "dependencies": {
+    "@metaplex/js": "^4.12.0",
+    "connect-timeout": "^1.9.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
   },
-  "homepage": "https://github.com/debuggor/solana-metadata-proxy#readme"
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^12.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.6.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
 }
