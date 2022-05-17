@@ -13,7 +13,7 @@
 
     HOST=0.0.0.0
     PORT=8081
-    SolanaRpc="https://solana-mainnet.phantom.tech,https://mainnet-beta.solflare.network,https://api.vip.mainnet-beta.solana.com"
+    SolanaRpc="https://solana-mainnet.phantom.tech,https://mainnet-beta.solflare.network"
     
     SolanaRpc配置数组 每个rpc都可以访问 
 
