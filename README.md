@@ -37,5 +37,4 @@
     
     https://sol-mainnet.wallet.coinbase.com/
     
-    https://api.vip.mainnet-beta.solana.com
     
